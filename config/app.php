@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
+use BladeUI\Icons\BladeIconsServiceProvider;
 
 return [
 
@@ -181,6 +182,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        BladeUI\Icons\BladeIconsServiceProvider::class,
+        BladeIconsServiceProvider::class,
 
         /*
          * Package Service Providers...

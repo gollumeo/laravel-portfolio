@@ -1,4 +1,9 @@
-<!doctype html>
+@php
+    use BladeUI\Icons\BladeIcons;
+    use BladeUI\Components\BladeComponent;
+@endphp
+
+    <!doctype html>
 <html lang="en" class="min-h-screen">
 <head>
     <meta charset="UTF-8">
@@ -23,16 +28,15 @@
     <nav class="flex flex-row justify-between items-around w-screen mr-4">
         <span
             class="logo text-left ml-4 font-['Arima'] italic text-3xl text-orange-600 font-extrabold">Pierre Mauriello</span>
-        <div class="links text-right flex gap-4 items-center text-base">
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+        <div class="links text-right flex gap-4 items-center text-base text-slate-50">
+            <a href="/" class="text-orange-700 font-bold text-lg">Home</a>
+            <a href="/projects" class="hover:scale-125 transition duration-500">Projects</a>
+            <a href="/contact" class="w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-900 font-bold hover:text-slate-50 duration-500">Contact me!</a>
         </div>
     </nav>
 </header>
-
 <main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5 h-screen">
-    <section class="mt-4 rounded-2xl shadow-gray-900 flex flex-col flex-wrap">
+    <section class="mt-4 flex flex-col flex-wrap">
         <article class="text-justify p-2">
             <div class="photo absolute">
                 <img src="" alt="">
@@ -79,37 +83,55 @@
             <p class="my-6 text-base xl:text-lg mb-4">I have a strong foundation in the following languages and
                 frameworks:</p>
             <ul class="w-full mx-auto justify-center md:grid md:grid-cols-6 grid grid-cols-2 gap-6 text-center mt-4">
-                <div class="flex flex-col">
-                    <i class="fa-brands fa-html5 fa-4x text-orange-700 py-2"></i>
-                    <p>HTML 5</p>
+                <div class="flex flex-col text-orange-600 hover:scale-125 transition duration-700 shadow-sm shadow-orange-500 rounded-lg">
+                    <x-si-html5 class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">HTML 5</p>
                 </div>
-                <div>
-                    <i class="fa-brands fa-css3-alt fa-4x"></i>
-                    <p></p>
+                <div class="flex flex-col text-blue-500 hover:scale-125 transition duration-700 shadow-sm shadow-blue-400 rounded-lg">
+                    <x-si-css3 class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">CSS 3</p>
                 </div>
-                <div>
-                    <i class="fa-brands fa-square-js fa-4x"></i>
-                    <p></p>
+                <div class="flex flex-col text-yellow-600 hover:scale-125 transition duration-700 shadow-sm shadow-yellow-500 rounded-lg">
+                    <x-si-javascript class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">JavaScript</p>
                 </div>
-                <div>
-                    <i class="fa-brands fa-php fa-4x"></i>
-                    <p></p>
+                <div class="flex flex-col text-indigo-700 hover:scale-125 transition duration-700 shadow-sm shadow-indigo-600 rounded-lg">
+                    <x-fab-php class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">PHP</p>
                 </div>
-                <div>
-                    <i class="fa-brands fa-laravel fa-4x"></i>
-                    <p></p>
+                <div class="flex flex-col text-red-700 hover:scale-125 transition duration-700 shadow-sm shadow-red-600 rounded-lg">
+                    <x-fileicon-laravel class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">Laravel</p>
                 </div>
-                <div>
-                    <i class="fa-solid fa-database fa-4x"></i>
-                    <p></p>
+                <div class="flex flex-col text-blue-700 hover:scale-125 transition duration-700 shadow-sm shadow-blue-600 rounded-lg">
+                    <x-fontisto-mysql class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">MySQL</p>
                 </div>
-                <div>
-                    <i class="fa-brands fa-git-alt fa-4x"></i>
-                    <p></p>
+                <div class="flex flex-col text-rose-900 hover:scale-125 transition duration-700 shadow-sm shadow-rose-800 rounded-lg">
+                    <x-si-git class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">Git</p>
                 </div>
-                <!--<div>
-                <li class="my-2 text-base xl:text-lg">TailwindCSS</li>
-                </div>-->
+                <div class="flex flex-col text-slate-400 hover:scale-125 transition duration-700 shadow-sm shadow-slate-300 rounded-lg">
+                    <x-codicon-terminal-bash class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">Bash</p>
+                </div>
+                <div class="flex flex-col text-sky-400 hover:scale-125 transition duration-700 shadow-sm shadow-sky-300 rounded-lg">
+                    <x-fileicon-tailwind class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">Tailwind CSS</p>
+                </div>
+                <div class="flex flex-col text-purple-600 hover:scale-125 transition duration-700 shadow-sm shadow-purple-600 rounded-lg">
+                    <x-si-phpstorm class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">PHPStorm</p>
+                </div>
+                <div class="flex flex-col text-green-700 hover:scale-125 transition duration-700 shadow-sm shadow-green-600 rounded-lg">
+                    <x-si-datagrip class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">Data Grip</p>
+                </div>
+                <div class="flex flex-col text-gray-300 hover:scale-125 transition duration-700 shadow-sm shadow-gray-200 rounded-lg">
+                    <x-fab-github class="h-20 py-2"/>
+                    <p class="text-lg font-semibold">GitHub</p>
+                </div>
+
             </ul>
 
         </article>
