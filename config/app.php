@@ -182,12 +182,12 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        BladeUI\Icons\BladeIconsServiceProvider::class,
-        BladeIconsServiceProvider::class,
 
         /*
          * Package Service Providers...
          */
+
+        BladeUI\Icons\BladeIconsServiceProvider::class,
 
         /*
          * Application Service Providers...

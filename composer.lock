@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dda1528a8a647aabad479557d58f948",
+    "content-hash": "b37b59b558b7a90a4036662eac1142dd",
     "packages": [
         {
             "name": "blade-ui-kit/blade-icons",
@@ -436,6 +436,78 @@
                 }
             ],
             "time": "2023-02-18T13:59:07+00:00"
+        },
+        {
+            "name": "codeat3/blade-maki-icons",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codeat3/blade-maki-icons.git",
+                "reference": "2c4722b3f0a03cf471f4f84578e5125161deccc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codeat3/blade-maki-icons/zipball/2c4722b3f0a03cf471f4f84578e5125161deccc3",
+                "reference": "2c4722b3f0a03cf471f4f84578e5125161deccc3",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.1",
+                "illuminate/support": "^8.0|^9.0|^10.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "codeat3/blade-icon-generation-helpers": "^0.3",
+                "codeat3/phpcs-styles": "^1.0",
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codeat3\\BladeMakiIcons\\BladeMakiIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codeat3\\BladeMakiIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Swapnil Sarwe",
+                    "homepage": "https://swapnilsarwe.com"
+                },
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of Maki Icons in your Laravel Blade views.",
+            "homepage": "https://github.com/codeat3/blade-maki-icons",
+            "keywords": [
+                "blade",
+                "icons",
+                "laravel",
+                "maki"
+            ],
+            "support": {
+                "issues": "https://github.com/codeat3/blade-maki-icons/issues",
+                "source": "https://github.com/codeat3/blade-maki-icons/tree/1.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/swapnilsarwe",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-02-21T05:15:08+00:00"
         },
         {
             "name": "codeat3/blade-simple-icons",
