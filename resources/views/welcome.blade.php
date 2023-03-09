@@ -76,63 +76,63 @@
         </article>
     </section>
     <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto">
-    <section class="mt-4 rounded-2xl shadow-gray-900 flex flex-col flex-wrap h-full w-full">
+    <section class="mt-4 rounded-2xl shadow-gray-900 flex flex-col flex-wrap h-full w-full mb-4">
         <article class="text-justify p-2">
             <h2 class="text-3xl font-black">What can I do?</h2>
             <h3 class="mt-6 text-xl font-semibold text-orange-600">Skills</h3>
             <p class="my-6 text-base xl:text-lg mb-4">I have a strong foundation in the following languages and
                 frameworks:</p>
-            <ul class="w-full mx-auto justify-center md:grid md:grid-cols-6 grid grid-cols-2 gap-6 text-center mt-4">
-                <div class="flex flex-col text-orange-600 hover:scale-125 transition duration-700 shadow-sm shadow-orange-500 rounded-lg">
+            <div class="w-full mx-auto justify-center md:grid md:grid-cols-6 grid grid-cols-2 gap-6 text-center mt-4">
+                <div class="flex flex-col text-orange-600 hover:scale-110 transition duration-700 shadow-sm shadow-orange-500 rounded-lg">
                     <x-si-html5 class="h-20 py-2"/>
                     <p class="text-lg font-semibold">HTML 5</p>
                 </div>
-                <div class="flex flex-col text-blue-500 hover:scale-125 transition duration-700 shadow-sm shadow-blue-400 rounded-lg">
+                <div class="flex flex-col text-blue-500 hover:scale-110 transition duration-700 shadow-sm shadow-blue-400 rounded-lg">
                     <x-si-css3 class="h-20 py-2"/>
                     <p class="text-lg font-semibold">CSS 3</p>
                 </div>
-                <div class="flex flex-col text-yellow-600 hover:scale-125 transition duration-700 shadow-sm shadow-yellow-500 rounded-lg">
+                <div class="flex flex-col text-yellow-600 hover:scale-110 transition duration-700 shadow-sm shadow-yellow-500 rounded-lg">
                     <x-si-javascript class="h-20 py-2"/>
                     <p class="text-lg font-semibold">JavaScript</p>
                 </div>
-                <div class="flex flex-col text-indigo-700 hover:scale-125 transition duration-700 shadow-sm shadow-indigo-600 rounded-lg">
+                <div class="flex flex-col text-indigo-700 hover:scale-110 transition duration-700 shadow-sm shadow-indigo-600 rounded-lg">
                     <x-fab-php class="h-20 py-2"/>
                     <p class="text-lg font-semibold">PHP</p>
                 </div>
-                <div class="flex flex-col text-red-700 hover:scale-125 transition duration-700 shadow-sm shadow-red-600 rounded-lg">
+                <div class="flex flex-col text-red-700 hover:scale-110 transition duration-700 shadow-sm shadow-red-600 rounded-lg">
                     <x-fileicon-laravel class="h-20 py-2"/>
                     <p class="text-lg font-semibold">Laravel</p>
                 </div>
-                <div class="flex flex-col text-blue-700 hover:scale-125 transition duration-700 shadow-sm shadow-blue-600 rounded-lg">
+                <div class="flex flex-col text-blue-700 hover:scale-110 transition duration-700 shadow-sm shadow-blue-600 rounded-lg">
                     <x-fontisto-mysql class="h-20 py-2"/>
                     <p class="text-lg font-semibold">MySQL</p>
                 </div>
-                <div class="flex flex-col text-rose-900 hover:scale-125 transition duration-700 shadow-sm shadow-rose-800 rounded-lg">
+                <div class="flex flex-col text-rose-900 hover:scale-110 transition duration-700 shadow-sm shadow-rose-800 rounded-lg">
                     <x-si-git class="h-20 py-2"/>
                     <p class="text-lg font-semibold">Git</p>
                 </div>
-                <div class="flex flex-col text-slate-400 hover:scale-125 transition duration-700 shadow-sm shadow-slate-300 rounded-lg">
+                <div class="flex flex-col text-slate-400 hover:scale-110 transition duration-700 shadow-sm shadow-slate-300 rounded-lg">
                     <x-codicon-terminal-bash class="h-20 py-2"/>
                     <p class="text-lg font-semibold">Bash</p>
                 </div>
-                <div class="flex flex-col text-sky-400 hover:scale-125 transition duration-700 shadow-sm shadow-sky-300 rounded-lg">
+                <div class="flex flex-col text-sky-400 hover:scale-110 transition duration-700 shadow-sm shadow-sky-300 rounded-lg">
                     <x-fileicon-tailwind class="h-20 py-2"/>
                     <p class="text-lg font-semibold">Tailwind CSS</p>
                 </div>
-                <div class="flex flex-col text-purple-600 hover:scale-125 transition duration-700 shadow-sm shadow-purple-600 rounded-lg">
+                <div class="flex flex-col text-purple-600 hover:scale-110 transition duration-700 shadow-sm shadow-purple-600 rounded-lg">
                     <x-si-phpstorm class="h-20 py-2"/>
                     <p class="text-lg font-semibold">PHPStorm</p>
                 </div>
-                <div class="flex flex-col text-green-700 hover:scale-125 transition duration-700 shadow-sm shadow-green-600 rounded-lg">
+                <div class="flex flex-col text-green-700 hover:scale-110 transition duration-700 shadow-sm shadow-green-600 rounded-lg">
                     <x-si-datagrip class="h-20 py-2"/>
                     <p class="text-lg font-semibold">Data Grip</p>
                 </div>
-                <div class="flex flex-col text-gray-300 hover:scale-125 transition duration-700 shadow-sm shadow-gray-200 rounded-lg">
+                <div class="flex flex-col text-gray-300 hover:scale-110 transition duration-700 shadow-sm shadow-gray-200 rounded-lg">
                     <x-fab-github class="h-20 py-2"/>
                     <p class="text-lg font-semibold">GitHub</p>
                 </div>
 
-            </ul>
+            </div>
 
         </article>
 
