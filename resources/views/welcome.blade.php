@@ -13,7 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="{{ asset('assets/img/gollumeo.png') }}">
-    @vite('resources/css/app.css')
+{{--    @vite('resources/css/app.css')--}}
+    <link rel="stylesheet" href="{{ URL('assets/app-3d9cc74b.css') }}">
     <title>Pierre Mauriello</title>
 </head>
 <body
@@ -182,7 +183,7 @@
                         <a href="/privacy" class="hover:underline hover:text-orange-700">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
+                        <a href="/terms" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
                     </li>
                 </ul>
             </div>

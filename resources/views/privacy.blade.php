@@ -521,7 +521,7 @@
                         <a href="/privacy" class="hover:underline hover:text-orange-700">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
+                        <a href="/terms" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
                     </li>
                 </ul>
             </div>
