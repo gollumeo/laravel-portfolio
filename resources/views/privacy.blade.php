@@ -496,10 +496,10 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Resources</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="https://becode.org/" class="hover:underline">BeCode</a>
+                        <a href="https://becode.org/" class="hover:underline hover:text-orange-700">BeCode</a>
                     </li>
                     <li>
-                        <a href="#TODO" class="hover:underline">Resume</a>
+                        <a href="#TODO" class="hover:underline hover:text-orange-700">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -507,10 +507,10 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase dark:text-white">Let's connect</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="https://github.com/gollumeo" class="hover:underline ">Github</a>
+                        <a href="https://github.com/gollumeo" class="hover:underline hover:text-orange-700">Github</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin/in/pierre-mauriello" class="hover:underline">LinkedIn</a>
+                        <a href="https://www.linkedin/in/pierre-mauriello" class="hover:underline hover:text-orange-700">LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -518,10 +518,10 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Legal</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="/privacy" class="hover:underline">Privacy Policy</a>
+                        <a href="/privacy" class="hover:underline hover:text-orange-700">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                        <a href="#" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
                     </li>
                 </ul>
             </div>

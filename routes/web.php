@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/privacy', function () {
     return view('privacy');
 });
+
+Route::get('/terms', function () {
+    return view('tac');
+});

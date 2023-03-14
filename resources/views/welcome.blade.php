@@ -149,7 +149,6 @@
         </div>
     </section>
 </main>
-
 <footer
     class="bg-neutral-900 text-slate-100 w-full p-2 h-max mt-4">
     <div class="md:flex md:self-center md:items-center md:justify-center mb-6">
@@ -158,10 +157,10 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Resources</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="https://becode.org/" class="hover:underline">BeCode</a>
+                        <a href="https://becode.org/" class="hover:underline hover:text-orange-700">BeCode</a>
                     </li>
                     <li>
-                        <a href="#TODO" class="hover:underline">Resume</a>
+                        <a href="#TODO" class="hover:underline hover:text-orange-700">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -169,10 +168,10 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase dark:text-white">Let's connect</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="https://github.com/gollumeo" class="hover:underline ">Github</a>
+                        <a href="https://github.com/gollumeo" class="hover:underline hover:text-orange-700">Github</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin/in/pierre-mauriello" class="hover:underline">LinkedIn</a>
+                        <a href="https://www.linkedin/in/pierre-mauriello" class="hover:underline hover:text-orange-700">LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -180,17 +179,17 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Legal</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="/privacy" class="hover:underline">Privacy Policy</a>
+                        <a href="/privacy" class="hover:underline hover:text-orange-700">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                        <a href="#" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="flex flex-col justify-center items-center text-sm text-slate-50 self-center">
-    <hr class="block border-slate-50 sm:mx-auto w-full self-center"/>
+        <hr class="block border-slate-50 sm:mx-auto w-full self-center"/>
         <span class="py-4">© 2023 - {{ date('Y') }} Pierre "Golluméo" Mauriello. All Rights Reserved.</span>
     </div>
 </footer>
