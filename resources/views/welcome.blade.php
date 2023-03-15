@@ -13,12 +13,16 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="{{ asset('assets/img/gollumeo.png') }}">
-{{--    @vite('resources/css/app.css')--}}
-    <link rel="stylesheet" href="{{ URL('assets/app-3d9cc74b.css') }}">
+    @vite('resources/css/app.css')
     <title>Pierre Mauriello</title>
 </head>
 <body
     class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50 w-full">
+
+{{--<div class="flex justify-center items-center h-screen">--}}
+{{--    <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-32 w-32" x-show="isLoading"></div>--}}
+{{--</div>--}}
+
 <header
     class="fixed top-0 w-full text-center text-2xl bg-neutral-900 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16">
     <nav class="flex flex-row justify-between items-around w-screen mr-4">
