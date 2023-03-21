@@ -10,11 +10,13 @@ class PortfolioProjectController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
     {
-        //
+//        $projects = PortfolioProject::all();
+//        return view('projects.index', ['projects' => $projects]);
+        return view('projects.index');
     }
 
     /**

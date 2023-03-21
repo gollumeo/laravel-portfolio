@@ -19,7 +19,7 @@
 <body
     class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50 w-full">
 <header
-    class="fixed top-0 w-full text-center text-2xl bg-neutral-900 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16">
+    class="fixed top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16">
     <nav class="flex flex-row justify-between items-around w-screen mr-4">
         <span
             class="logo text-left ml-4 font-['Arima'] italic text-2xl md:text-3xl text-orange-700 font-extrabold self-center"><a
@@ -28,18 +28,18 @@
             <a href="/" class="hover:scale-125 transition duration-500">Home</a>
             <a href="/projects" class="hover:scale-125 transition duration-500">Projects</a>
             <a href="/contact"
-               class="w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-900 font-bold hover:text-slate-50 duration-500">Contact
+               class="w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-800 font-bold hover:text-slate-50 duration-500">Contact
                 me!</a>
         </div>
     </nav>
 </header>
-<main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5 h-screen">
+<main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5 h-screen mt-16">
     <section class="text-justify">
         <h1 class="text-5xl text-orange-700 font-bold m-8 text-center self-center">Terms and Conditions</h1>
 
         <p class="text-base my-2">Welcome to Pierre Mauriello!</p>
 
-        <p class="text-base my-2"These terms and conditions outline the rules and regulations for the use of Pierre Mauriello's Website,
+        <p class="text-base my-2">These terms and conditions outline the rules and regulations for the use of Pierre Mauriello's Website,
             located at https://pierre-mauriello.be.</p>
 
         <p class="text-base my-2">By accessing this website we assume you accept these terms and conditions. Do not continue to use Pierre
@@ -228,7 +228,7 @@
 </main>
 
 <footer
-    class="bg-neutral-900 text-slate-100 w-full p-2 h-max mt-4">
+    class="bg-neutral-800 text-slate-100 w-full p-2 h-max mt-4 pt-6">
     <div class="md:flex md:self-center md:items-center md:justify-center mb-6">
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 self-center">
             <div>

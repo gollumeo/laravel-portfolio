@@ -18,13 +18,8 @@
 </head>
 <body
     class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50 w-full">
-
-{{--<div class="flex justify-center items-center h-screen">--}}
-{{--    <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-32 w-32" x-show="isLoading"></div>--}}
-{{--</div>--}}
-
 <header
-    class="fixed top-0 w-full text-center text-2xl bg-neutral-900 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16">
+    class="fixed top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16">
     <nav class="flex flex-row justify-between items-around w-screen mr-4">
         <span
             class="logo text-left ml-4 font-['Arima'] italic text-2xl md:text-3xl text-orange-700 font-extrabold self-center"><a
@@ -33,19 +28,19 @@
             <a href="/" class="text-orange-700 font-bold text-lg">Home</a>
             <a href="/projects" class="hover:scale-125 transition duration-500">Projects</a>
             <a href="/contact"
-               class="w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-900 font-bold hover:text-slate-50 duration-500">Contact
+               class="w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-800 font-bold hover:text-slate-50 duration-500">Contact
                 me!</a>
         </div>
     </nav>
 </header>
-<main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5 h-screen">
+<main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5 h-screen mt-16">
     <section class="mt-4 flex flex-col flex-wrap">
         <article class="text-justify p-2">
             <div class="photo absolute">
                 <img src="" alt="">
                 <img src="" alt="">
             </div>
-            <h2 class="text-3xl font-black">Who am I?</h2>
+            <h1 class="text-3xl font-black">Who am I?</h1>
             <h3 class="mt-6 text-xl font-semibold text-orange-600">Background</h3>
             <p class="my-6 text-base xl:text-lg">I am a highly motivated, self-taught programmer with a passion for
                 technology that
@@ -80,7 +75,7 @@
     </section>
     <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto">
     <section class="mt-4 rounded-2xl shadow-gray-900 flex flex-col flex-wrap h-full w-full mb-4">
-        <article class="text-justify p-2">
+        <article class="text-justify p-2 mb-4">
             <h2 class="text-3xl font-black">What can I do?</h2>
             <p class="my-6 text-base xl:text-lg mb-4">I have a strong foundation in the following technologies:</p>
             <div class="w-full mx-auto justify-center md:grid md:grid-cols-6 grid grid-cols-2 gap-6 text-center mt-4">
@@ -146,7 +141,7 @@
                 </div>
             </div>
         </article>
-        <div class="flex flex-row mt-8 items-center justify-center">
+        <div class="flex flex-row my-8 items-center justify-center">
             <h3 class="text-2xl mr-4 font-semibold">Convinced? </h3>
             <div
                 class="flex items-center justify-center text-2xl flex items-center justify-center w-40 h-8 border-2 border-orange-800 bg-orange-700 rounded-2xl p-4 hover:cursor-pointer hover:bg-inherit text-black font-bold hover:text-slate-50 duration-500">
@@ -155,7 +150,7 @@
     </section>
 </main>
 <footer
-    class="bg-neutral-900 text-slate-100 w-full p-2 h-max mt-4">
+    class="bg-neutral-800 text-slate-100 w-full p-2 h-max mt-4 pt-6">
     <div class="md:flex md:self-center md:items-center md:justify-center mb-6">
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 self-center">
             <div>

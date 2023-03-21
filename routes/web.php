@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PortfolioProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,5 @@ Route::get('/privacy', function () {
 Route::get('/terms', function () {
     return view('tac');
 });
+
+Route::get('/projects', [PortfolioProjectController::class, 'index']);
