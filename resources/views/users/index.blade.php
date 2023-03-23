@@ -47,7 +47,7 @@
                         <a href="https://becode.org/" class="hover:underline hover:text-orange-700">BeCode</a>
                     </li>
                     <li>
-                        <a href="./Resume_Pierre_Mauriello_Dev_Backend_Junior.pdf" class="hover:underline hover:text-orange-700">Resume</a>
+                        <a href="./" class="hover:underline hover:text-orange-700">Resume</a>
                     </li>
                 </ul>
             </div>

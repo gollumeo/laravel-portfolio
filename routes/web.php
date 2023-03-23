@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PortfolioProjectController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +28,7 @@ Route::get('/terms', function () {
 });
 
 Route::get('/projects', [PortfolioProjectController::class, 'index']);
+
+Route::get('/register', [UserController::class, 'create']);
+
+Route::post('user/create', [UserController::class, 'store']);

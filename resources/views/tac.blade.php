@@ -238,12 +238,12 @@
                         <a href="https://becode.org/" class="hover:underline hover:text-orange-700">BeCode</a>
                     </li>
                     <li>
-                        <a href="#TODO" class="hover:underline hover:text-orange-700">Resume</a>
+                        <a href="./Resume_Pierre_Mauriello_Dev_Backend_Junior.pdf" class="hover:underline hover:text-orange-700">Resume</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase dark:text-white">Let's connect</h2>
+                <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Let's connect</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
                         <a href="https://github.com/gollumeo" class="hover:underline hover:text-orange-700">Github</a>

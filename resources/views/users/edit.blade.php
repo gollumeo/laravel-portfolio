@@ -14,7 +14,7 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="{{ asset('assets/img/gollumeo.png') }}">
     @vite('resources/css/app.css')
-    <title>Pierre Mauriello - Projects</title>
+    <title>Pierre Mauriello - Update a project</title>
 </head>
 <body
     class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50 w-full">
@@ -34,7 +34,7 @@
     </nav>
 </header>
 <main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5 min-h-screen mt-16">
-    <h1 class="text-5xl font-extrabold mt-8 text-orange-700">My projects</h1>
+    <h1>Add a new project</h1>
 </main>
 <footer
     class="bg-neutral-800 text-slate-100 w-full p-2 h-max mt-4 pt-6">
@@ -47,7 +47,7 @@
                         <a href="https://becode.org/" class="hover:underline hover:text-orange-700">BeCode</a>
                     </li>
                     <li>
-                        <a href="./Resume_Pierre_Mauriello_Dev_Backend_Junior.pdf" class="hover:underline hover:text-orange-700">Resume</a>
+                        <a href="./" class="hover:underline hover:text-orange-700">Resume</a>
                     </li>
                 </ul>
             </div>

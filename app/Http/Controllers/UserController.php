@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Language;
 use Illuminate\Http\Request;
 
-class LanguageController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,11 +19,11 @@ class LanguageController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function create()
     {
-        //
+        return view ('users.create');
     }
 
     /**
@@ -41,10 +40,10 @@ class LanguageController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Language  $language
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Language $language)
+    public function show($id)
     {
         //
     }
@@ -52,10 +51,10 @@ class LanguageController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Language  $language
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Language $language)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +63,10 @@ class LanguageController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Language  $language
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Language $language)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +74,10 @@ class LanguageController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Language  $language
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Language $language)
+    public function destroy($id)
     {
         //
     }
