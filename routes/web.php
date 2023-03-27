@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\PortfolioProjectController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,6 +29,14 @@ Route::get('/terms', function () {
 
 Route::get('/projects', [PortfolioProjectController::class, 'index']);
 
-Route::get('/register', [UserController::class, 'create']);
+Route::get('/register', [UsersController::class, 'create']);
 
-Route::post('user/create', [UserController::class, 'store']);
+Route::post('/users/create', [UsersController::class, 'store']);
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/projects/create', [PortfolioProjectController::class, 'create']);
+    Route::post('/projects/create', [PortfolioProjectController::class, 'store']);
+    Route::get('/projects/{projects}/edit', [PortfolioProjectController::class, 'edit']);
+    Route::put('/projects/{projects}/edit', [PortfolioProjectController::class, 'update']);
+    Route::delete('/projects/{projects}/delete', [PortfolioProjectController::class, 'destroy']);
+});

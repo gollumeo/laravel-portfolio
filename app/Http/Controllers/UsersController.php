@@ -2,9 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateUser;
+use App\Models\User;
+use App\Models\UsersOld;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 
-class UserController extends Controller
+
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,24 +29,41 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view ('users.create');
+        return view('users.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Illuminate\Validation\ValidationException
      */
-    public function store(Request $request)
+    public function store(CreateUser $request)
     {
-        //
+        $password = $request->input('password');
+        $repeat_password = $request->input('repeat_password');
+
+        if ($password === $repeat_password) {
+            $hashed_password = Hash::make($password);
+        } else {
+            return redirect()->back()->withErrors(['password' => 'Passwords do not match']);
+        }
+
+        $users = new User();
+        $users->name = $request->input('name');
+        $users->email = $request->input('email');
+        $users->password = $hashed_password;
+//        dd($request->all());
+        $users->save();
+        return redirect('/')->with('success', 'User created successfully');
     }
+
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -51,7 +74,7 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -62,8 +85,8 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -74,7 +97,7 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
