@@ -4,10 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateUser;
 use App\Models\User;
-use App\Models\UsersOld;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Log;
 
 
 class UsersController extends Controller
@@ -42,19 +40,13 @@ class UsersController extends Controller
     public function store(CreateUser $request)
     {
         $password = $request->input('password');
-        $repeat_password = $request->input('repeat_password');
+        $hashed_password = Hash::make($password);
 
-        if ($password === $repeat_password) {
-            $hashed_password = Hash::make($password);
-        } else {
-            return redirect()->back()->withErrors(['password' => 'Passwords do not match']);
-        }
 
         $users = new User();
         $users->name = $request->input('name');
         $users->email = $request->input('email');
         $users->password = $hashed_password;
-//        dd($request->all());
         $users->save();
         return redirect('/')->with('success', 'User created successfully');
     }

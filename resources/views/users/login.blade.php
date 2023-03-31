@@ -14,7 +14,7 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="{{ asset('assets/img/gollumeo.png') }}">
     @vite('resources/css/app.css')
-    <title>Pierre Mauriello - Register</title>
+    <title>Pierre Mauriello - Login</title>
     <style>
 
     </style>
@@ -37,18 +37,11 @@
     </nav>
 </header>
 <main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5 h-screen mt-20">
-    <h1 class="text-5xl text-orange-700 font-extrabold mt-4">Register</h1>
+    <h1 class="text-5xl text-orange-700 font-extrabold mt-4">Login</h1>
 
 
-    <form action="/users/create" method="POST" class="flex flex-col w-1/2 shadow shadow-slate-800 rounded-xl p-4 m-auto">
+    <form action="/login/check" method="POST" class="flex flex-col w-1/2 shadow shadow-slate-800 rounded-xl p-4 m-auto">
         @csrf
-        <div class="relative w-full mb-6 group">
-            <input type="text" name="name" id="name" class=" block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white border-gray-600 focus:border-orange-500 focus:outline-none focus:ring-0 focus:border-orange-600 peer invalid:text-rose-700 invalid:ring-rose-700 empty:text-white" placeholder=" " required />
-            <label for="name" class="peer-focus:font-medium absolute text-sm text-gray-500 text-slate-50 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-orange-600 peer-focus:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 invalid:text-rose-700 invalid:ring-rose-700">Name</label>
-            @error('name')
-            <div class="text-rose-700 mt-2 mb-2">{{ $message }}</div>
-            @enderror
-        </div>
         <div class="relative w-full mb-6 group">
             <input type="email" name="email" id="email" class=" block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white border-gray-600 focus:border-orange-500 focus:outline-none focus:ring-0 focus:border-orange-600 peer invalid:text-rose-700 invalid:ring-rose-700 empty:text-white" placeholder=" " required />
             <label for="email" class="peer-focus:font-medium absolute text-sm text-gray-500 text-slate-50 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-orange-600 peer-focus:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 invalid:text-rose-700 invalid:ring-rose-700">Email address</label>
@@ -60,14 +53,7 @@
             <input type="password" name="password" id="password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white border-gray-600 focus:border-orange-500 focus:outline-none focus:ring-0 focus:border-orange-600 peer invalid:text-rose-700 invalid:ring-rose-700 empty:text-white" placeholder=" " required />
             <label for="password" class="peer-focus:font-medium absolute text-sm text-gray-500 text-slate-50 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-orange-600 peer-focus:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 invalid:text-rose-700 invalid:ring-rose-700">Password</label>
         </div>
-        <div class="relative w-full mb-6 group">
-            <input type="password" name="repeat_password" id="repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none text-white border-gray-600 focus:border-orange-500 focus:outline-none focus:ring-0 focus:border-orange-600 peer invalid:text-rose-700 invalid:ring-rose-700 empty:text-white" placeholder=" " required />
-            <label for="repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 text-slate-50 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-orange-600 peer-focus:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 invalid:text-rose-700 invalid:ring-rose-700">Confirm password</label>
-            @error('repeat_password')
-            <div class="text-rose-700 mt-2 mb-2">{{ $message }}</div>
-            @enderror
-        </div>
-        <input type="submit" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-orange-600 hover:bg-orange-700 focus:ring-orange-800 transition" name="Submit" value="Submit">
+        <input type="submit" class="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-orange-600 hover:bg-orange-700 focus:ring-orange-800 transition" name="login" value="Submit">
     </form>
 
 </main>

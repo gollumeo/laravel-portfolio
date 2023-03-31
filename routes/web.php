@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PortfolioProjectController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
@@ -32,6 +33,12 @@ Route::get('/projects', [PortfolioProjectController::class, 'index']);
 Route::get('/register', [UsersController::class, 'create']);
 
 Route::post('/users/create', [UsersController::class, 'store']);
+
+Route::get('/login', function() {
+    return view('users.login');
+})->name('login');
+
+Route::post('/login/check', [AuthController::class, 'login']);
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/projects/create', [PortfolioProjectController::class, 'create']);
