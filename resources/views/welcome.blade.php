@@ -19,17 +19,17 @@
     <title>Pierre Mauriello</title>
 </head>
 <body
-    class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50 w-full">
+    class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50">
 <header
     class="sticky top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16 z-50">
     <nav class="flex flex-row justify-between items-around w-screen mr-4">
     <span class="logo text-left ml-4 font-['Arima'] italic text-2xl md:text-3xl text-orange-700 font-extrabold self-center"><h1>
         <a href="/">Pierre Mauriello</a></h1>
     </span>
-        <div class="links text-right flex gap-4 items-center text-base text-slate-50">
-            <a href="/" class="text-orange-700 font-bold text-lg">Home</a>
+        <div class="links text-right flex gap-4 items-center text-xs sm:text-base text-slate-50">
+            <a href="/" class="text-orange-700 font-bold text-base">Home</a>
             <a href="/projects" class="hover:scale-125 transition duration-500">Projects</a>
-            <a href="/contact" class="w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-800 font-bold hover:text-slate-50 duration-500">Contact me!</a>
+            <a href="/contact" class="w-24 sm:w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-800 font-bold hover:text-slate-50 duration-500">Contact me!</a>
         </div>
     </nav>
 </header>
@@ -39,8 +39,8 @@
             <div class="flex flex-row items-center -mb-8">
                 <h2 class="text-3xl font-black">Who am I?</h2>
                 <div class="relative">
-                    <img src="{{asset("assets/img/pdp.jpg")}}" alt="Pierre picture" class="rounded-full w-40 ml-10 border-2 border-orange-700 transition-opacity duration-500 hover:opacity-0">
-                    <img src="{{asset("assets/img/gollumeo.png")}}" alt="Pierre / Golluméo logo" class="rounded-full w-40 ml-10 border-2 border-orange-700 absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
+                    <img src="{{asset("assets/img/pdp.jpg")}}" alt="Pierre picture" class="rounded-full w-40 ml-10 border-2 border-orange-700 transition-opacity duration-500 hover:opacity-0 active:opacity-0">
+                    <img src="{{asset("assets/img/gollumeo.png")}}" alt="Pierre / Golluméo logo" class="rounded-full w-40 ml-10 border-2 border-orange-700 absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 active:opacity-100">
                 </div>
             </div>
 
@@ -81,11 +81,11 @@
         </article>
     </section>
     <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto">
-    <section class="mt-4 rounded-2xl shadow-gray-900 flex flex-col flex-wrap h-full w-full mb-4">
+    <section class="mt-4 rounded-2xl shadow-gray-900 flex flex-col flex-wrap h-full mb-4">
         <article class="text-justify p-2 mb-4">
             <h2 class="text-3xl font-black">What can I do?</h2>
             <p class="my-6 text-base xl:text-lg mb-4">I have a strong foundation in the following languages:</p>
-            <div class="w-full mx-auto justify-center md:grid md:grid-cols-6 grid grid-cols-2 gap-6 text-center mt-4">
+            <div class="max-w-full mx-auto justify-center md:grid md:grid-cols-6 grid grid-cols-2 gap-6 text-center mt-4">
                 <div
                     class="flex flex-col text-blue-500 hover:scale-110 transition duration-700 shadow-sm shadow-blue-400 rounded-lg">
                     <x-si-css3 class="h-20 md:h-16 lg:h-20 py-2"/>
@@ -119,7 +119,7 @@
             </div>
             <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto mt-8">
             <p class="my-6 text-base xl:text-lg mb-4">I also know how to work with the following frameworks:</p>
-            <div class="w-full mx-auto flex flex-row justify-center gap-6 text-center mt-4">
+            <div class="w-full mx-auto md:flex md:flex-row justify-center grid grid-cols-2 gap-6 text-center mt-4">
                 <div
                     class="flex flex-col text-red-700 hover:scale-105 transition duration-700 shadow-sm shadow-red-600 rounded-lg flex-1">
                     <x-fileicon-laravel class="h-20 md:h-16 lg:h-20 py-2"/>
