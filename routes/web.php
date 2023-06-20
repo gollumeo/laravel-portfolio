@@ -28,6 +28,10 @@ Route::get('/terms', function () {
     return view('tac');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Route::get('/projects', [PortfolioProjectController::class, 'index']);
 
 Route::get('/register', [UsersController::class, 'create']);

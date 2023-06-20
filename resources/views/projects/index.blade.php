@@ -19,21 +19,21 @@
 <body
     class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50 w-full">
 <header
-    class="fixed top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16">
+    class="sticky top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16">
     <nav class="flex flex-row justify-between items-around w-screen mr-4">
         <span
             class="logo text-left ml-4 font-['Arima'] italic text-2xl md:text-3xl text-orange-700 font-extrabold self-center"><a
                 href="/">Pierre Mauriello</a></span>
         <div class="links text-right flex gap-4 items-center text-base text-slate-50">
-            <a href="/" class="text-orange-700 font-bold text-lg">Home</a>
-            <a href="/projects" class="hover:scale-125 transition duration-500">Projects</a>
+            <a href="/" class="hover:scale-125 transition duration-500">Home</a>
+            <a href="/projects" class="text-orange-700 font-bold text-lg">Projects</a>
             <a href="/contact"
                class="w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-800 font-bold hover:text-slate-50 duration-500">Contact
                 me!</a>
         </div>
     </nav>
 </header>
-<main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5 min-h-screen mt-16">
+<main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5">
     <h1 class="text-5xl font-extrabold mt-8 text-orange-700">My projects</h1>
 </main>
 <footer
@@ -44,10 +44,11 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Resources</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="https://becode.org/" class="hover:underline hover:text-orange-700">BeCode</a>
+                        <a href="https://becode.org/" target="_blank" class="hover:underline hover:text-orange-700">BeCode</a>
                     </li>
                     <li>
-                        <a href="./Resume_Pierre_Mauriello_Dev_Backend_Junior.pdf" class="hover:underline hover:text-orange-700">Resume</a>
+                        <a href="./Resume_Pierre_Mauriello_Dev_Backend_Junior.pdf"
+                           target="_blank" class="hover:underline hover:text-orange-700">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -55,10 +56,11 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Let's connect</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="https://github.com/gollumeo" class="hover:underline hover:text-orange-700">Github</a>
+                        <a href="https://github.com/gollumeo" target="_blank" class="hover:underline hover:text-orange-700">Github</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin/in/pierre-mauriello" class="hover:underline hover:text-orange-700">LinkedIn</a>
+                        <a href="https://www.linkedin/in/pierre-mauriello" target="_blank"
+                           class="hover:underline hover:text-orange-700">LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -66,10 +68,10 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Legal</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="/privacy" class="hover:underline hover:text-orange-700">Privacy Policy</a>
+                        <a href="/privacy" target="_blank" class="hover:underline hover:text-orange-700">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="/terms" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
+                        <a href="/terms" target="_blank" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
                     </li>
                 </ul>
             </div>

@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Pierre Mauriello">
+    <meta name="description" content='Pierre "Golluméo" Mauriello is a junior backend developer eager to join the tech industry and land his first job or internship!'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap"
@@ -19,28 +21,30 @@
 <body
     class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50 w-full">
 <header
-    class="fixed top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16">
+    class="sticky top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16 z-50">
     <nav class="flex flex-row justify-between items-around w-screen mr-4">
-        <span
-            class="logo text-left ml-4 font-['Arima'] italic text-2xl md:text-3xl text-orange-700 font-extrabold self-center"><a
-                href="/">Pierre Mauriello</a></span>
+    <span class="logo text-left ml-4 font-['Arima'] italic text-2xl md:text-3xl text-orange-700 font-extrabold self-center"><h1>
+        <a href="/">Pierre Mauriello</a></h1>
+    </span>
         <div class="links text-right flex gap-4 items-center text-base text-slate-50">
             <a href="/" class="text-orange-700 font-bold text-lg">Home</a>
             <a href="/projects" class="hover:scale-125 transition duration-500">Projects</a>
-            <a href="/contact"
-               class="w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-800 font-bold hover:text-slate-50 duration-500">Contact
-                me!</a>
+            <a href="/contact" class="w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-800 font-bold hover:text-slate-50 duration-500">Contact me!</a>
         </div>
     </nav>
 </header>
-<main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5 h-screen mt-16">
+<main class="flex-1 flex flex-col items-center bg-slate-850 w-4/5 h-screen">
     <section class="mt-4 flex flex-col flex-wrap">
         <article class="text-justify p-2">
-            <div class="photo absolute">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="flex flex-row items-center -mb-8">
+                <h2 class="text-3xl font-black">Who am I?</h2>
+                <div class="relative">
+                    <img src="{{asset("assets/img/pdp.jpg")}}" alt="Pierre picture" class="rounded-full w-40 ml-10 border-2 border-orange-700 transition-opacity duration-500 hover:opacity-0">
+                    <img src="{{asset("assets/img/gollumeo.png")}}" alt="Pierre / Golluméo logo" class="rounded-full w-40 ml-10 border-2 border-orange-700 absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100">
+                </div>
             </div>
-            <h1 class="text-3xl font-black">Who am I?</h1>
+
+
             <h3 class="mt-6 text-xl font-semibold text-orange-600">Background</h3>
             <p class="my-6 text-base xl:text-lg">I am a highly motivated, self-taught programmer with a passion for
                 technology that
@@ -60,24 +64,27 @@
                 to
                 helping individuals start a career in web development. This intensive bootcamp is providing me with the
                 hands-on training I need to reach my goals, and I am eagerly soaking up every bit of knowledge and
-                experience.</p>
+                experience.<br>
+                To do so, I also attended the <span class="text-orange-500 font-semibold">"Citizens of Wallonia"</span> Hackathon, which took place from the 10th to the 12th of March 2023.<br>
+                Moreover, I am currently working on the <span class="text-orange-500 font-semibold">Cloudskills Challenges</span> from Microsoft, aiming to get their <span class="text-orange-500 font-semibold">C# & .NET Certification</span>.</p>
         </article>
         <article class="text-justify p-2">
             <h3 class="mt-4 text-xl font-semibold text-orange-600">Career goals</h3>
-            <p class="my-6 text-base xl:text-lg">Upon completing my studies at BeCode on <span
-                    class="text-orange-500 font-semibold">May 29th</span>, I am eager to join the tech industry as a
-                <span class="text-orange-500 font-semibold">backend</span> developer, with a focus on <span
-                    class="text-orange-500 font-semibold">PHP and Laravel</span>.
-                I am confident in my abilities and eager to bring my diverse background, passion for programming, and
-                drive
-                to succeed to a new role in the industry.</p>
+            <p class="my-6 text-base xl:text-lg">Now that my studies at <span
+                    class="text-orange-500 font-semibold">BeCode</span> are over, I am actively looking for a <span
+                    class="text-orange-500 font-semibold">first job</span> or an <span
+                    class="text-orange-500 font-semibold">internship</span> (until the 30th of August) to join the tech industry as a <span
+                    class="text-orange-500 font-semibold">backend</span> developer, with a focus on <span
+                class="text-orange-500 font-semibold">PHP, Laravel</span> or even <span
+                    class="text-orange-500 font-semibold">C# and .NET</span>. I am also open to learn further into the <span
+                class="text-orange-500 font-semibold">MAUI</span> framework to build cross-platforms apps.</p>
         </article>
     </section>
     <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto">
     <section class="mt-4 rounded-2xl shadow-gray-900 flex flex-col flex-wrap h-full w-full mb-4">
         <article class="text-justify p-2 mb-4">
             <h2 class="text-3xl font-black">What can I do?</h2>
-            <p class="my-6 text-base xl:text-lg mb-4">I have a strong foundation in the following technologies:</p>
+            <p class="my-6 text-base xl:text-lg mb-4">I have a strong foundation in the following languages:</p>
             <div class="w-full mx-auto justify-center md:grid md:grid-cols-6 grid grid-cols-2 gap-6 text-center mt-4">
                 <div
                     class="flex flex-col text-blue-500 hover:scale-110 transition duration-700 shadow-sm shadow-blue-400 rounded-lg">
@@ -100,20 +107,43 @@
                     <p class="md:text-xs lg:text-lg text-lg font-semibold">PHP</p>
                 </div>
                 <div
-                    class="flex flex-col text-red-700 hover:scale-110 transition duration-700 shadow-sm shadow-red-600 rounded-lg">
-                    <x-fileicon-laravel class="h-20 md:h-16 lg:h-20 py-2"/>
-                    <p class="md:text-xs lg:text-lg text-lg font-semibold">Laravel</p>
-                </div>
-                <div
                     class="flex flex-col text-blue-700 hover:scale-110 transition duration-700 shadow-sm shadow-blue-600 rounded-lg">
                     <x-fontisto-mysql class="h-20 md:h-16 lg:h-20 py-2"/>
                     <p class="md:text-xs lg:text-lg text-lg font-semibold">MySQL</p>
                 </div>
                 <div
-                    class="flex flex-col text-sky-400 hover:scale-110 transition duration-700 shadow-sm shadow-sky-300 rounded-lg">
+                    class="flex flex-col text-purple-700 hover:scale-110 transition duration-700 shadow-sm shadow-purple-600 rounded-lg">
+                    <x-tni-c-sharp class="h-20 md:h-16 lg:h-20 py-2"/>
+                    <p class="md:text-xs lg:text-lg text-lg font-semibold">C#</p>
+                </div>
+            </div>
+            <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto mt-8">
+            <p class="my-6 text-base xl:text-lg mb-4">I also know how to work with the following frameworks:</p>
+            <div class="w-full mx-auto flex flex-row justify-center gap-6 text-center mt-4">
+                <div
+                    class="flex flex-col text-red-700 hover:scale-105 transition duration-700 shadow-sm shadow-red-600 rounded-lg flex-1">
+                    <x-fileicon-laravel class="h-20 md:h-16 lg:h-20 py-2"/>
+                    <p class="md:text-xs lg:text-lg text-lg font-semibold">Laravel</p>
+                </div>
+                <div
+                    class="flex flex-col text-sky-400 hover:scale-105 transition duration-700 shadow-sm shadow-sky-300 rounded-lg flex-1">
                     <x-fileicon-tailwind class="h-20 md:h-16 lg:h-20 py-2"/>
                     <p class="md:text-xs lg:text-lg text-lg font-semibold">Tailwind CSS</p>
                 </div>
+                <div
+                    class="flex flex-col text-cyan-600 hover:scale-105 transition duration-700 shadow-sm shadow-cyan-500 rounded-lg flex-1">
+                    <x-devicon-dot-net class="h-20 md:h-16 lg:h-20 py-2"/>
+                    <p class="md:text-xs lg:text-lg text-lg font-semibold">.NET</p>
+                </div>
+                <div
+                    class="flex flex-col text-[#512BD4] hover:scale-105 transition duration-700 shadow-sm shadow-[#512BD4] rounded-lg flex-1">
+                    <x-devicon-dotnetcore class="h-20 md:h-16 lg:h-20 py-2"/>
+                    <p class="md:text-xs lg:text-lg text-lg font-semibold">.NET MAUI</p>
+                </div>
+            </div>
+            <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto mt-8">
+            <p class="my-6 text-base xl:text-lg mb-4">Finally, I'm comfortable enough with version control and those tools:</p>
+            <div class="w-full mx-auto justify-center md:grid md:grid-cols-7 grid grid-cols-2 gap-6 text-center mt-4">
                 <div
                     class="flex flex-col text-rose-900 hover:scale-110 transition duration-700 shadow-sm shadow-rose-800 rounded-lg">
                     <x-si-git class="h-20 md:h-16 lg:h-20 py-2"/>
@@ -125,26 +155,38 @@
                     <p class="md:text-xs lg:text-lg text-lg font-semibold">GitHub</p>
                 </div>
                 <div
+                    class="flex flex-col text-slate-400 hover:scale-110 transition duration-700 shadow-sm shadow-slate-300 rounded-lg">
+                    <x-codicon-terminal-bash class="h-20 md:h-16 lg:h-20 py-2"/>
+                    <p class="md:text-xs lg:text-lg text-lg font-semibold">Bash</p>
+                </div>
+                <div
                     class="flex flex-col text-purple-600 hover:scale-110 transition duration-700 shadow-sm shadow-purple-600 rounded-lg">
                     <x-si-phpstorm class="h-20 md:h-16 lg:h-20 py-2"/>
                     <p class="md:text-xs lg:text-lg text-lg font-semibold">PHPStorm</p>
                 </div>
                 <div
-                    class="flex flex-col text-slate-400 hover:scale-110 transition duration-700 shadow-sm shadow-slate-300 rounded-lg">
-                    <x-codicon-terminal-bash class="h-20 md:h-16 lg:h-20 py-2"/>
-                    <p class="md:text-xs lg:text-lg text-lg font-semibold">Bash</p>
+                    class="flex flex-col text-emerald-600 hover:scale-110 transition duration-700 shadow-sm shadow-emerald-500 rounded-lg">
+                    <x-si-webstorm class="h-20 md:h-16 lg:h-20 py-2"/>
+                    <p class="md:text-xs lg:text-lg text-lg font-semibold">WebStorm</p>
                 </div>
                 <div
                     class="flex flex-col text-green-700 hover:scale-110 transition duration-700 shadow-sm shadow-green-600 rounded-lg">
                     <x-si-datagrip class="h-20 md:h-16 lg:h-20 py-2"/>
                     <p class="md:text-xs lg:text-lg text-lg font-semibold">Data Grip</p>
                 </div>
+                <div
+                    class="flex flex-col text-red-600 hover:scale-110 transition duration-700 shadow-sm shadow-red-500 rounded-lg">
+                    <x-si-rider class="h-20 md:h-16 lg:h-20 py-2"/>
+                    <p class="md:text-xs lg:text-lg text-lg font-semibold">Rider</p>
+                </div>
             </div>
+
+
         </article>
         <div class="flex flex-row my-8 items-center justify-center">
-            <h3 class="text-2xl mr-4 font-semibold">Convinced? </h3>
+            <h3 class="text-2xl mr-4 font-semibold">Convinced?</h3>
             <div
-                class="flex items-center justify-center text-2xl flex items-center justify-center w-40 h-8 border-2 border-orange-800 bg-orange-700 rounded-2xl p-4 hover:cursor-pointer hover:bg-inherit text-black font-bold hover:text-slate-50 duration-500">
+                class="flex items-center justify-center text-2xl w-40 h-8 border-2 border-orange-800 bg-orange-700 rounded-3xl p-6 hover:cursor-pointer hover:bg-inherit text-black font-bold hover:text-slate-50 duration-500">
                 <a href="mailto:hire-me@pierre-mauriello.be">Hire me!</a></div>
         </div>
     </section>
@@ -157,10 +199,11 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Resources</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="https://becode.org/" class="hover:underline hover:text-orange-700">BeCode</a>
+                        <a href="https://becode.org/" target="_blank" class="hover:underline hover:text-orange-700">BeCode</a>
                     </li>
                     <li>
-                        <a href="./Resume_Pierre_Mauriello_Dev_Backend_Junior.pdf" class="hover:underline hover:text-orange-700">Resume</a>
+                        <a href="./Resume_Pierre_Mauriello_Dev_Backend_Junior.pdf"
+                           target="_blank" class="hover:underline hover:text-orange-700">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -168,10 +211,11 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Let's connect</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="https://github.com/gollumeo" class="hover:underline hover:text-orange-700">Github</a>
+                        <a href="https://github.com/gollumeo" target="_blank" class="hover:underline hover:text-orange-700">Github</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin/in/pierre-mauriello" class="hover:underline hover:text-orange-700">LinkedIn</a>
+                        <a href="https://www.linkedin/in/pierre-mauriello" target="_blank"
+                           class="hover:underline hover:text-orange-700">LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -179,10 +223,10 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Legal</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="/privacy" class="hover:underline hover:text-orange-700">Privacy Policy</a>
+                        <a href="/privacy" target="_blank" class="hover:underline hover:text-orange-700">Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="/terms" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
+                        <a href="/terms" target="_blank" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
                     </li>
                 </ul>
             </div>
