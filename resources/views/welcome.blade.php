@@ -2,10 +2,12 @@
 <html lang="en" class="min-h-screen">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Pierre Mauriello">
-    <meta name="description" content='Pierre "Golluméo" Mauriello is a junior backend developer eager to join the tech industry and land his first job or internship!'>
+    <meta name="description"
+          content='Pierre "Golluméo" Mauriello is a junior backend developer eager to join the tech industry and land his first job or internship!'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&display=swap"
@@ -14,22 +16,30 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="{{ asset('assets/img/gollumeo.png') }}">
-{{--    <link rel="stylesheet" href="{{secure_asset('resources/css/app.css')}}?v=1">--}}
     @vite('resources/css/app.css')
     <title>Pierre Mauriello</title>
 </head>
 <body
     class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50 w-full">
+{{--{{dd(Auth::check())}}--}}
 <header
-    class="sticky top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16 z-50">
+    class="sticky top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center justify-center md:h-16 z-50">
     <nav class="flex flex-row justify-between items-around w-screen mr-4">
-    <span class="logo text-left ml-4 font-['Arima'] italic text-2xl md:text-3xl text-orange-700 font-extrabold self-center"><h1>
+    <span
+        class="logo text-left ml-4 font-['Arima'] italic text-2xl md:text-3xl text-orange-700 font-extrabold self-center"><h1>
         <a href="/">Pierre Mauriello</a></h1>
     </span>
+        @auth
+            <div class="hover:scale-125 transition duration-500"><a href="/technologies/create" class="text-base">Add a techno</a></div>
+            <div class="hover:scale-125 transition duration-500"><a href="/projects/create" class="text-base">Add a project</a></div>
+            <div class="hover:scale-125 transition duration-500"><a href="/logout" class="text-base">Logout</a></div>
+        @endauth
         <div class="links text-right flex gap-4 items-center text-xs sm:text-base text-slate-50">
             <a href="/" class="text-orange-700 font-bold text-base">Home</a>
             <a href="/projects" class="hover:scale-125 transition duration-500">Projects</a>
-            <a href="/contact" class="w-24 sm:w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-800 font-bold hover:text-slate-50 duration-500">Contact me!</a>
+            <a href="/contact"
+               class="w-24 sm:w-36 h-10 flex items-center justify-center border-2 border-orange-700 bg-orange-700 rounded-2xl hover:scale-105 transition hover:bg-inherit text-neutral-800 font-bold hover:text-slate-50 duration-500">Contact
+                me!</a>
         </div>
     </nav>
 </header>
@@ -39,8 +49,10 @@
             <div class="flex flex-row items-center -mb-8">
                 <h2 class="text-3xl font-black">Who am I?</h2>
                 <div class="relative">
-                    <img src="{{asset("assets/img/pdp.jpg")}}" alt="Pierre picture" class="rounded-full w-40 ml-10 border-2 border-orange-700 transition-opacity duration-500 hover:opacity-0 active:opacity-0">
-                    <img src="{{asset("assets/img/gollumeo.png")}}" alt="Pierre / Golluméo logo" class="rounded-full w-40 ml-10 border-2 border-orange-700 absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 active:opacity-100">
+                    <img src="{{asset("assets/img/pdp.jpg")}}" alt="Pierre picture"
+                         class="rounded-full w-40 ml-10 border-2 border-orange-700 transition-opacity duration-500 hover:opacity-0 active:opacity-0">
+                    <img src="{{asset("assets/img/gollumeo.png")}}" alt="Pierre / Golluméo logo"
+                         class="rounded-full w-40 ml-10 border-2 border-orange-700 absolute top-0 left-0 opacity-0 transition-opacity duration-500 hover:opacity-100 active:opacity-100">
                 </div>
             </div>
 
@@ -65,21 +77,36 @@
                 helping individuals start a career in web development. This intensive bootcamp is providing me with the
                 hands-on training I need to reach my goals, and I am eagerly soaking up every bit of knowledge and
                 experience.<br>
-                To do so, I also attended the <span class="text-orange-500 font-semibold">"Citizens of Wallonia"</span> Hackathon, which took place from the 10th to the 12th of March 2023.<br>
-                </p>
+                To do so, I also attended the <span class="text-orange-500 font-semibold">"Citizens of Wallonia"</span>
+                Hackathon, which took place from the 10th to the 12th of March 2023.<br>
+            </p>
         </article>
         <article class="text-justify p-2">
             <h3 class="mt-4 text-xl font-semibold text-orange-600">Career goals</h3>
-            <p class="my-6 text-base xl:text-lg">After my studies at <span class="text-orange-500 font-semibold">BeCode</span> are over, I have been working for <span class="text-orange-500 font-semibold"><a href="https://faradaylab.fr/">Faraday Lab</a></span> as an intern <em>AI, Software &amp; Web Developer</em>. <span class="text-orange-500 font-semibold">Faraday Lab</span> is a company that aims to bring AI &amp; LLMs affordable and accessible to everyone, regardless of their skills, social environment, machine, internet connection or financial situation.
+            <p class="my-6 text-base xl:text-lg">After my studies at <span
+                    class="text-orange-500 font-semibold">BeCode</span> are over, I have been working for <span
+                    class="text-orange-500 font-semibold"><a href="https://faradaylab.fr/">Faraday Lab</a></span> as an
+                intern <em>AI, Software &amp; Web Developer</em>. <span class="text-orange-500 font-semibold">Faraday Lab</span>
+                is a company that aims to bring AI &amp; LLMs affordable and accessible to everyone, regardless of their
+                skills, social environment, machine, internet connection or financial situation.
             </p>
-            <p class="my-6 text-base xl:text-lg">I am now looking for my <span class="text-orange-500 font-semibold">next challenge</span> as a <span class="text-orange-500 font-semibold">Laravel</span> Developer. Originally highly back-end specialized, I am now able to also work as a <span class="text-orange-500 font-semibold">Full-Stack</span> Developer, thanks to my prior experience within Faraday Lab. The work I've accomplished there convinced and proved me that I'm totally able to learn a new stack quickly enough (roughly <span class="text-orange-500 font-semibold">2 weeks</span> to learn <em>TypeScript & Svelte</em>) to be efficient for any company willing to trust me! On that matter, I am also currently learning how to make <span class="text-orange-500 font-semibold">Vue 3</span> work within a complex <span class="text-orange-500 font-semibold">Laravel</span> project.</p></article>
+            <p class="my-6 text-base xl:text-lg">I am now looking for my <span class="text-orange-500 font-semibold">next challenge</span>
+                as a <span class="text-orange-500 font-semibold">Laravel</span> Developer. Originally highly back-end
+                specialized, I am now able to also work as a <span
+                    class="text-orange-500 font-semibold">Full-Stack</span> Developer, thanks to my prior experience
+                within Faraday Lab. The work I've accomplished there convinced and proved me that I'm totally able to
+                learn a new stack quickly enough (roughly <span class="text-orange-500 font-semibold">2 weeks</span> to
+                learn <em>TypeScript & Svelte</em>) to be efficient for any company willing to trust me! On that matter,
+                I am also currently learning how to make <span class="text-orange-500 font-semibold">Vue 3</span> work
+                within a complex <span class="text-orange-500 font-semibold">Laravel</span> project.</p></article>
     </section>
     <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto">
     <section class="mt-4 rounded-2xl shadow-gray-900 flex flex-col flex-wrap h-full mb-4 w-full">
         <article class="text-justify p-2 mb-4">
             <h2 class="text-3xl font-black">What can I do?</h2>
             <p class="my-6 text-base xl:text-lg mb-4">I have a strong foundation in the following languages:</p>
-            <div class="max-w-full mx-auto justify-center md:grid md:grid-cols-6 grid grid-cols-2 gap-6 text-center mt-4">
+            <div
+                class="max-w-full mx-auto justify-center md:grid md:grid-cols-6 grid grid-cols-2 gap-6 text-center mt-4">
                 <div
                     class="flex flex-col text-blue-500 hover:scale-110 transition duration-700 shadow-sm shadow-blue-400 rounded-lg">
                     <x-si-css3 class="h-20 md:h-16 lg:h-20 py-2"/>
@@ -137,7 +164,8 @@
 
             </div>
             <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto mt-8">
-            <p class="my-6 text-base xl:text-lg mb-4">Finally, I'm comfortable enough with version control and those tools:</p>
+            <p class="my-6 text-base xl:text-lg mb-4">Finally, I'm comfortable enough with version control and those
+                tools:</p>
             <div class="w-full mx-auto justify-center md:grid md:grid-cols-7 grid grid-cols-2 gap-6 text-center mt-4">
                 <div
                     class="flex flex-col text-rose-900 hover:scale-110 transition duration-700 shadow-sm shadow-rose-800 rounded-lg">
@@ -206,7 +234,8 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Let's connect</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="https://github.com/gollumeo" target="_blank" class="hover:underline hover:text-orange-700">Github</a>
+                        <a href="https://github.com/gollumeo" target="_blank"
+                           class="hover:underline hover:text-orange-700">Github</a>
                     </li>
                     <li>
                         <a href="https://www.linkedin/in/pierre-mauriello" target="_blank"
@@ -218,10 +247,12 @@
                 <h2 class="mb-6 text-sm font-semibold text-orange-700 uppercase">Legal</h2>
                 <ul class="text-slate-50">
                     <li class="mb-4">
-                        <a href="/privacy" target="_blank" class="hover:underline hover:text-orange-700">Privacy Policy</a>
+                        <a href="/privacy" target="_blank" class="hover:underline hover:text-orange-700">Privacy
+                            Policy</a>
                     </li>
                     <li>
-                        <a href="/terms" target="_blank" class="hover:underline hover:text-orange-700">Terms &amp; Conditions</a>
+                        <a href="/terms" target="_blank" class="hover:underline hover:text-orange-700">Terms &amp;
+                            Conditions</a>
                     </li>
                 </ul>
             </div>

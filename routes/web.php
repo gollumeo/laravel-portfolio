@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PortfolioProjectController;
+use App\Http\Controllers\TechnologyController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,3 +53,9 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::put('/projects/{projects}/edit', [PortfolioProjectController::class, 'update']);
     Route::delete('/projects/{projects}/delete', [PortfolioProjectController::class, 'destroy']);
 });
+
+Route::get('/logout', [AuthController::class, 'userLogout']);
+
+Route::resource('technologies', TechnologyController::class)
+    ->only('create', 'store')
+    ->middleware(['auth:sanctum', 'verified']);

@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Technology extends Model
+class Project extends Model
 {
     use HasFactory;
 
-    protected $table = 'technologies';
+    protected $table = 'projects';
 
     protected $fillable = [
-        'technoName'
+        'project_name',
+        'project_img_src'
     ];
 }
