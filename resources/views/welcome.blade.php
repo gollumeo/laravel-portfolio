@@ -2,8 +2,7 @@
 <html lang="en" class="min-h-screen">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Pierre Mauriello">
     <meta name="description" content='Pierre "Golluméo" Mauriello is a junior backend developer eager to join the tech industry and land his first job or internship!'>
@@ -15,11 +14,12 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="{{ asset('assets/img/gollumeo.png') }}">
+{{--    <link rel="stylesheet" href="{{secure_asset('resources/css/app.css')}}?v=1">--}}
     @vite('resources/css/app.css')
     <title>Pierre Mauriello</title>
 </head>
 <body
-    class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50">
+    class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50 w-full">
 <header
     class="sticky top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center md:h-16 z-50">
     <nav class="flex flex-row justify-between items-around w-screen mr-4">
@@ -48,7 +48,7 @@
             <h3 class="mt-6 text-xl font-semibold text-orange-600">Background</h3>
             <p class="my-6 text-base xl:text-lg">I am a highly motivated, self-taught programmer with a passion for
                 technology that
-                was sparked when I was just 14 years old. Over the past <span class="text-orange-500 font-semibold">12 years</span>,
+                was sparked when I was just 14 years old. Over the past <span class="text-orange-500 font-semibold">{{ date('Y') - 2010 }} years</span>,
                 I have continuously honed my skills through online resources and personal projects.</p>
 
             <p class="my-6 text-base xl:text-lg">Prior to my foray into the tech industry, I spent two years at
@@ -66,22 +66,16 @@
                 hands-on training I need to reach my goals, and I am eagerly soaking up every bit of knowledge and
                 experience.<br>
                 To do so, I also attended the <span class="text-orange-500 font-semibold">"Citizens of Wallonia"</span> Hackathon, which took place from the 10th to the 12th of March 2023.<br>
-                Moreover, I am currently working on the <span class="text-orange-500 font-semibold">Cloudskills Challenges</span> from Microsoft, aiming to get their <span class="text-orange-500 font-semibold">C# & .NET Certification</span>.</p>
+                </p>
         </article>
         <article class="text-justify p-2">
             <h3 class="mt-4 text-xl font-semibold text-orange-600">Career goals</h3>
-            <p class="my-6 text-base xl:text-lg">Now that my studies at <span
-                    class="text-orange-500 font-semibold">BeCode</span> are over, I am actively looking for a <span
-                    class="text-orange-500 font-semibold">first job</span> or an <span
-                    class="text-orange-500 font-semibold">internship</span> (until the 30th of August) to join the tech industry as a <span
-                    class="text-orange-500 font-semibold">backend</span> developer, with a focus on <span
-                class="text-orange-500 font-semibold">PHP, Laravel</span> or even <span
-                    class="text-orange-500 font-semibold">C# and .NET</span>. I am also open to learn further into the <span
-                class="text-orange-500 font-semibold">MAUI</span> framework to build cross-platforms apps.</p>
-        </article>
+            <p class="my-6 text-base xl:text-lg">After my studies at <span class="text-orange-500 font-semibold">BeCode</span> are over, I have been working for <span class="text-orange-500 font-semibold"><a href="https://faradaylab.fr/">Faraday Lab</a></span> as an intern <em>AI, Software &amp; Web Developer</em>. <span class="text-orange-500 font-semibold">Faraday Lab</span> is a company that aims to bring AI &amp; LLMs affordable and accessible to everyone, regardless of their skills, social environment, machine, internet connection or financial situation.
+            </p>
+            <p class="my-6 text-base xl:text-lg">I am now looking for my <span class="text-orange-500 font-semibold">next challenge</span> as a <span class="text-orange-500 font-semibold">Laravel</span> Developer. Originally highly back-end specialized, I am now able to also work as a <span class="text-orange-500 font-semibold">Full-Stack</span> Developer, thanks to my prior experience within Faraday Lab. The work I've accomplished there convinced and proved me that I'm totally able to learn a new stack quickly enough (roughly <span class="text-orange-500 font-semibold">2 weeks</span> to learn <em>TypeScript & Svelte</em>) to be efficient for any company willing to trust me! On that matter, I am also currently learning how to make <span class="text-orange-500 font-semibold">Vue 3</span> work within a complex <span class="text-orange-500 font-semibold">Laravel</span> project.</p></article>
     </section>
     <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto">
-    <section class="mt-4 rounded-2xl shadow-gray-900 flex flex-col flex-wrap h-full mb-4">
+    <section class="mt-4 rounded-2xl shadow-gray-900 flex flex-col flex-wrap h-full mb-4 w-full">
         <article class="text-justify p-2 mb-4">
             <h2 class="text-3xl font-black">What can I do?</h2>
             <p class="my-6 text-base xl:text-lg mb-4">I have a strong foundation in the following languages:</p>
@@ -102,6 +96,11 @@
                     <p class="md:text-xs lg:text-lg text-lg font-semibold">JavaScript</p>
                 </div>
                 <div
+                    class="flex flex-col text-sky-600 hover:scale-105 transition duration-700 shadow-sm shadow-sky-400 rounded-lg flex-1">
+                    <x-devicon-typescript class="h-20 md:h-16 lg:h-20 py-2"/>
+                    <p class="md:text-xs lg:text-lg text-lg font-semibold">TypeScript</p>
+                </div>
+                <div
                     class="flex flex-col text-indigo-700 hover:scale-110 transition duration-700 shadow-sm shadow-indigo-600 rounded-lg">
                     <x-fab-php class="h-20 md:h-16 lg:h-20 py-2"/>
                     <p class="md:text-xs lg:text-lg text-lg font-semibold">PHP</p>
@@ -110,11 +109,6 @@
                     class="flex flex-col text-blue-700 hover:scale-110 transition duration-700 shadow-sm shadow-blue-600 rounded-lg">
                     <x-fontisto-mysql class="h-20 md:h-16 lg:h-20 py-2"/>
                     <p class="md:text-xs lg:text-lg text-lg font-semibold">MySQL</p>
-                </div>
-                <div
-                    class="flex flex-col text-purple-700 hover:scale-110 transition duration-700 shadow-sm shadow-purple-600 rounded-lg">
-                    <x-tni-c-sharp class="h-20 md:h-16 lg:h-20 py-2"/>
-                    <p class="md:text-xs lg:text-lg text-lg font-semibold">C#</p>
                 </div>
             </div>
             <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto mt-8">
@@ -131,15 +125,16 @@
                     <p class="md:text-xs lg:text-lg text-lg font-semibold">Tailwind CSS</p>
                 </div>
                 <div
-                    class="flex flex-col text-cyan-600 hover:scale-105 transition duration-700 shadow-sm shadow-cyan-500 rounded-lg flex-1">
-                    <x-devicon-dot-net class="h-20 md:h-16 lg:h-20 py-2"/>
-                    <p class="md:text-xs lg:text-lg text-lg font-semibold">.NET</p>
+                    class="flex flex-col text-amber-600 hover:scale-105 transition duration-700 shadow-sm shadow-amber-600 rounded-lg flex-1">
+                    <x-devicon-svelte class="h-20 md:h-16 lg:h-20 py-2"/>
+                    <p class="md:text-xs lg:text-lg text-lg font-semibold">Svelte</p>
                 </div>
                 <div
-                    class="flex flex-col text-[#512BD4] hover:scale-105 transition duration-700 shadow-sm shadow-[#512BD4] rounded-lg flex-1">
-                    <x-devicon-dotnetcore class="h-20 md:h-16 lg:h-20 py-2"/>
-                    <p class="md:text-xs lg:text-lg text-lg font-semibold">.NET MAUI</p>
+                    class="flex flex-col text-emerald-500 hover:scale-105 transition duration-700 shadow-sm shadow-emerald-500 rounded-lg flex-1">
+                    <x-si-vuedotjs class="h-20 md:h-16 lg:h-20 py-2"/>
+                    <p class="md:text-xs lg:text-lg text-lg font-semibold">Vue.js</p>
                 </div>
+
             </div>
             <hr class="bg-orange-600 w-1/2 h-px border-0 m-auto mt-8">
             <p class="my-6 text-base xl:text-lg mb-4">Finally, I'm comfortable enough with version control and those tools:</p>

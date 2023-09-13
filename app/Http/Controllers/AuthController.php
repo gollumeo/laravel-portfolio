@@ -13,6 +13,9 @@ class AuthController extends Controller
     use Authenticatable;
     public array $credentials;
 
+    /**
+     * @throws ValidationException
+     */
     public function login(Request $request)
     {
 //        dd($request);

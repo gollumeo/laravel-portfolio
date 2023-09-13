@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PortfolioProjectController;
-use App\Http\Controllers\UsersController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,9 +34,9 @@ Route::get('/contact', function () {
 
 Route::get('/projects', [PortfolioProjectController::class, 'index']);
 
-Route::get('/register', [UsersController::class, 'create']);
+Route::get('/register', [UserController::class, 'create']);
 
-Route::post('/users/create', [UsersController::class, 'store']);
+Route::post('/users/create', [UserController::class, 'store']);
 
 Route::get('/login', function() {
     return view('users.login');

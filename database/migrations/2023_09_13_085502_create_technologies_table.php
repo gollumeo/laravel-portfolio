@@ -11,11 +11,12 @@ return new class extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('name')->after('email');
-
+        Schema::create('technologies', function (Blueprint $table) {
+            $table->id();
+            $table->string("TechnoName");
+            $table->timestamps();
         });
     }
 
@@ -24,10 +25,8 @@ return new class extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('technologies');
     }
 };

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Languages;
+use App\Models\Technology;
 use Illuminate\Http\Request;
 
-class LanguagesController extends Controller
+class TechnologyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,11 +20,11 @@ class LanguagesController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        return view('languages.create');
+        //
     }
 
     /**
@@ -41,10 +41,10 @@ class LanguagesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Languages  $languages
+     * @param  \App\Models\Technology  $technology
      * @return \Illuminate\Http\Response
      */
-    public function show(Languages $languages)
+    public function show(Technology $technology)
     {
         //
     }
@@ -52,10 +52,10 @@ class LanguagesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Languages  $languages
+     * @param  \App\Models\Technology  $technology
      * @return \Illuminate\Http\Response
      */
-    public function edit(Languages $languages)
+    public function edit(Technology $technology)
     {
         //
     }
@@ -64,10 +64,10 @@ class LanguagesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Languages  $languages
+     * @param  \App\Models\Technology  $technology
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Languages $languages)
+    public function update(Request $request, Technology $technology)
     {
         //
     }
@@ -75,10 +75,10 @@ class LanguagesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Languages  $languages
+     * @param  \App\Models\Technology  $technology
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Languages $languages)
+    public function destroy(Technology $technology)
     {
         //
     }
