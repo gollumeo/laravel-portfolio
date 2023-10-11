@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PortfolioProjectController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\TechnologyController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;

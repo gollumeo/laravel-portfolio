@@ -21,7 +21,6 @@
 </head>
 <body
     class="min-h-screen flex flex-col space-between items-center bg-black text-slate-50 w-full">
-{{--{{dd(Auth::check())}}--}}
 <header
     class="sticky top-0 w-full text-center text-2xl bg-neutral-800 text-slate-100 h-20 shadow-2xl flex flex-row items-center justify-center md:h-16 z-50">
     <nav class="flex flex-row justify-between items-around w-screen mr-4">
@@ -71,10 +70,10 @@
         </article>
         <article class="text-justify p-2">
             <h3 class="mt-4 text-xl font-semibold text-orange-600">Current work/projects</h3>
-            <p class="my-6 text-base xl:text-lg">I am currently pursuing my dream of becoming a backend developer at
+            <p class="my-6 text-base xl:text-lg">I am currently pursuing my dream of becoming a backend developer thanks to
                 <span class="text-orange-500 font-semibold">BeCode</span>, a nonprofit organization that is dedicated
                 to
-                helping individuals start a career in web development. This intensive bootcamp is providing me with the
+                helping individuals start a career in web development. This intensive bootcamp provided me with the
                 hands-on training I need to reach my goals, and I am eagerly soaking up every bit of knowledge and
                 experience.<br>
                 To do so, I also attended the <span class="text-orange-500 font-semibold">"Citizens of Wallonia"</span>
